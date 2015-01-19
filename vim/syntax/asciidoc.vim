@@ -44,8 +44,8 @@ syn match asciidocAttributeRef /\\\@<!{\w\(\w\|[-,+]\)*\([=!@#$%?:].*\)\?}/
 " As a damage control measure quoted patterns always terminate at a blank
 " line (see 'Limitations' above).
 syn match asciidocQuotedAttributeList /\\\@<!\[[a-zA-Z0-9_-][a-zA-Z0-9 _-]*\][+_'`#*]\@=/
-syn match asciidocQuotedSubscript /\\\@<!\~\S\_.\{-}\(\~\|\n\s*\n\)/ contains=asciidocEntityRef
-syn match asciidocQuotedSuperscript /\\\@<!\^\S\_.\{-}\(\^\|\n\s*\n\)/ contains=asciidocEntityRef
+syn match asciidocQuotedSubscript /\(^\|[-–—−~^+`'*| \t([.,=\]]\)\@<=\~\([~ \n\t]\)\@!\(.\|\n\(\s*\n\)\@!\)\{-}\S\(\~\([-–—−~^+`'*| \t)[\],.?!;:=]\|$\)\@=\)/ contains=asciidocEntityRef
+syn match asciidocQuotedSuperscript /\(^\|[-–—−~^+`'*| \t([.,=\]]\)\@<=\^\([\^ \n\t]\)\@!\(.\|\n\(\s*\n\)\@!\)\{-}\S\(\^\([-–—−~^+`'*| \t)[\],.?!;:=]\|$\)\@=\)/ contains=asciidocEntityRef
 
 syn match asciidocQuotedMonospaced /\(^\|[| \t([.,=\]]\)\@<=+\([+ \n\t]\)\@!\(.\|\n\(\s*\n\)\@!\)\{-}\S\(+\([| \t)[\],.?!;:=]\|$\)\@=\)/ contains=asciidocEntityRef
 syn match asciidocQuotedMonospaced2 /\(^\|[| \t([.,=\]]\)\@<=`\([` \n\t]\)\@!\(.\|\n\(\s*\n\)\@!\)\{-}\S\(`\([| \t)[\],.?!;:=]\|$\)\@=\)/
