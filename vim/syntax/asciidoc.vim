@@ -58,6 +58,9 @@ syn match asciidocQuotedUnconstrainedEmphasized /\\\@<!__\S\_.\{-}\(__\|\n\s*\n\
 syn match asciidocQuotedBold /\(^\|[-–—−~^+`'*| \t([.,=\]]\)\@<=\*\([* \n\t]\)\@!\(.\|\n\(\s*\n\)\@!\)\{-}\S\(\*\([-–—−~^+`'*| \t)[\],.?!;:=]\|$\)\@=\)/ contains=asciidocEntityRef containedin=asciidocQuotedSubscript,asciidocQuotedSuperscript
 syn match asciidocQuotedUnconstrainedBold /\\\@<!\*\*\S\_.\{-}\(\*\*\|\n\s*\n\)/ contains=asciidocEntityRef
 
+syn match asciidocQuotedUnquoted /\(^\|[| \t([.,=\]]\)\@<=#\([# \n\t]\)\@!\(.\|\n\(\s*\n\)\@!\)\{-}\S\(#\([| \t)[\],.?!;:=]\|$\)\@=\)/ contains=asciidocEntityRef
+syn match asciidocQuotedUnconstrainedUnquoted /\\\@<!##\S\_.\{-}\(##\|\n\s*\n\)/ contains=asciidocEntityRef
+
 " Don't allow ` in single quoted (a kludge to stop confusion with `monospaced`).
 syn match asciidocQuotedSingleQuoted /\(^\|[-–—−~^+`'*| \t([.,=\]]\)\@<=`\([` \n\t]\)\@!\([^`]\|\n\(\s*\n\)\@!\)\{-}[^` \t]\('\([-–—−~^+`'*| \t)[\],.?!;:=]\|$\)\@=\)/ contains=asciidocEntityRef containedin=asciidocQuotedSubscript,asciidocQuotedSuperscript
 
@@ -161,9 +164,11 @@ hi def link asciidocQuotedMonospaced Identifier
 hi def link asciidocQuotedSingleQuoted Label
 hi def link asciidocQuotedSubscript Type
 hi def link asciidocQuotedSuperscript Type
+hi def link asciidocQuotedUnquoted Normal
 hi def link asciidocQuotedUnconstrainedBold Special
 hi def link asciidocQuotedUnconstrainedEmphasized Type
 hi def link asciidocQuotedUnconstrainedMonospaced Identifier
+hi def link asciidocQuotedUnconstrainedUnquoted Normal
 hi def link asciidocRefMacro Macro
 hi def link asciidocRuler Type
 hi def link asciidocSidebarDelimiter Type
