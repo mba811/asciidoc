@@ -66,6 +66,17 @@ syn match asciidocQuotedDoubleQuoted /\(^\|[| \t([.,=\]]\)\@<=``\([` \n\t]\)\@!\
 syn match asciidocDoubleDollarPassthrough /\\\@<!\(^\|[^0-9a-zA-Z$]\)\@<=\$\$..\{-}\(\$\$\([^0-9a-zA-Z$]\|$\)\@=\|^$\)/
 syn match asciidocTriplePlusPassthrough /\\\@<!\(^\|[^0-9a-zA-Z$]\)\@<=+++..\{-}\(+++\([^0-9a-zA-Z$]\|$\)\@=\|^$\)/
 
+syn match asciidocSubscriptDelimiter contained "[~]" containedin=asciidocQuotedSubscript
+syn match asciidocSuperscriptDelimiter contained "\^" containedin=asciidocQuotedSuperscript
+syn match asciidocMonospacedDelimiter contained "[+]" containedin=asciidocQuotedMonospaced
+syn match asciidocMonospaced2Delimiter contained "[`]" containedin=asciidocQuotedMonospaced2
+syn match asciidocUnconstrainedMonospacedDelimiter contained "[+][+]" containedin=asciidocQuotedUnconstrainedMonospaced
+syn match asciidocEmphasizedDelimiter contained "[_]" containedin=asciidocQuotedEmphasized
+syn match asciidocEmphasized2Delimiter contained "[']" containedin=asciidocQuotedEmphasized2
+syn match asciidocUnconstrainedEmphasizedDelimiter contained "[_][_]" containedin=asciidocQuotedUnconstrainedEmphasized
+syn match asciidocBoldDelimiter contained "[*]" containedin=asciidocQuotedBold
+syn match asciidocUnconstrainedBoldDelimiter contained "[*][*]" containedin=asciidocQuotedUnconstrainedBold
+
 syn match asciidocAdmonition /^\u\{3,15}:\(\s\+.*\)\@=/
 
 syn region asciidocTable_OLD start=/^\([`.']\d*[-~_]*\)\+[-~_]\+\d*$/ end=/^$/
@@ -164,6 +175,16 @@ hi def link asciidocQuotedSuperscript Type
 hi def link asciidocQuotedUnconstrainedBold Special
 hi def link asciidocQuotedUnconstrainedEmphasized Type
 hi def link asciidocQuotedUnconstrainedMonospaced Identifier
+hi def link asciidocSubscriptDelimiter asciidocQuotedSubscript
+hi def link asciidocSuperscriptDelimiter asciidocQuotedSuperscript
+hi def link asciidocMonospacedDelimiter asciidocQuotedMonospaced
+hi def link asciidocMonospaced2Delimiter asciidocQuotedMonospaced2
+hi def link asciidocUnconstrainedMonospacedDelimiter asciidocQuotedUnconstrainedMonospaced
+hi def link asciidocEmphasizedDelimiter asciidocQuotedEmphasized
+hi def link asciidocEmphasized2Delimiter asciidocQuotedEmphasized2
+hi def link asciidocUnconstrainedEmphasizedDelimiter asciidocQuotedUnconstrainedEmphasized
+hi def link asciidocBoldDelimiter asciidocQuotedBold
+hi def link asciidocUnconstrainedBoldDelimiter asciidocQuotedUnconstrainedBold
 hi def link asciidocRefMacro Macro
 hi def link asciidocRuler Type
 hi def link asciidocSidebarDelimiter Type
