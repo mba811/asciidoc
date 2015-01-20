@@ -77,6 +77,9 @@ syn match asciidocUnconstrainedEmphasizedDelimiter contained "[_][_]" conceal co
 syn match asciidocBoldDelimiter contained "[*]" conceal containedin=asciidocQuotedBold
 syn match asciidocUnconstrainedBoldDelimiter contained "[*][*]" conceal containedin=asciidocQuotedUnconstrainedBold
 
+syn match asciidocConcealUnReplacement	contained "\\\([-=]>\)\@=" conceal containedin=asciidocQuotedMonospaced,asciidocQuotedUnconstrainedMonospaced
+syn match asciidocConcealUnReplacement	contained "\\\(<[-=]\)\@=" conceal containedin=asciidocQuotedMonospaced,asciidocQuotedUnconstrainedMonospaced
+
 syn match asciidocAdmonition /^\u\{3,15}:\(\s\+.*\)\@=/
 
 syn region asciidocTable_OLD start=/^\([`.']\d*[-~_]*\)\+[-~_]\+\d*$/ end=/^$/
