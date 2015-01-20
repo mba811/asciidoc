@@ -79,6 +79,8 @@ syn match asciidocEmphasized2Delimiter contained "[']" containedin=asciidocQuote
 syn match asciidocUnconstrainedEmphasizedDelimiter contained "[_][_]" containedin=asciidocQuotedUnconstrainedEmphasized
 syn match asciidocBoldDelimiter contained "[*]" containedin=asciidocQuotedBold
 syn match asciidocUnconstrainedBoldDelimiter contained "[*][*]" containedin=asciidocQuotedUnconstrainedBold
+syn match asciidocUnquotedDelimiter contained "[#]" containedin=asciidocQuotedUnquoted
+syn match asciidocUnconstrainedUnquotedDelimiter contained "[#][#]" containedin=asciidocQuotedUnconstrainedUnquoted
 
 syn match asciidocAdmonition /^\u\{3,15}:\(\s\+.*\)\@=/
 
@@ -190,6 +192,8 @@ hi def link asciidocEmphasized2Delimiter asciidocQuotedEmphasized2
 hi def link asciidocUnconstrainedEmphasizedDelimiter asciidocQuotedUnconstrainedEmphasized
 hi def link asciidocBoldDelimiter asciidocQuotedBold
 hi def link asciidocUnconstrainedBoldDelimiter asciidocQuotedUnconstrainedBold
+hi def link asciidocUnquotedDelimiter asciidocQuotedUnquoted
+hi def link asciidocUnconstrainedUnquotedDelimiter asciidocQuotedUnconstrainedUnquoted
 hi def link asciidocRefMacro Macro
 hi def link asciidocRuler Type
 hi def link asciidocSidebarDelimiter Type
