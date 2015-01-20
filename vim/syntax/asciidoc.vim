@@ -32,7 +32,7 @@ syn match asciidocBackslash /\\/
 syn region asciidocIdMarker start=/^\$Id:\s/ end=/\s\$$/
 syn match asciidocCallout /\\\@<!<\d\{1,2}>/
 syn match asciidocOpenBlockDelimiter /^--$/
-syn match asciidocLineBreak /[ \t]+$/ containedin=asciidocList
+syn match asciidocLineBreak /[ \t]+$/ conceal containedin=asciidocList
 syn match asciidocRuler /^'\{3,}$/
 syn match asciidocPagebreak /^<\{3,}$/
 syn match asciidocEntityRef /\\\@<!&[#a-zA-Z]\S\{-};/
@@ -68,14 +68,14 @@ syn match asciidocTriplePlusPassthrough /\\\@<!\(^\|[^0-9a-zA-Z$]\)\@<=+++..\{-}
 
 syn match asciidocSubscriptDelimiter contained "[~]" containedin=asciidocQuotedSubscript
 syn match asciidocSuperscriptDelimiter contained "\^" containedin=asciidocQuotedSuperscript
-syn match asciidocMonospacedDelimiter contained "[+]" containedin=asciidocQuotedMonospaced
-syn match asciidocMonospaced2Delimiter contained "[`]" containedin=asciidocQuotedMonospaced2
-syn match asciidocUnconstrainedMonospacedDelimiter contained "[+][+]" containedin=asciidocQuotedUnconstrainedMonospaced
-syn match asciidocEmphasizedDelimiter contained "[_]" containedin=asciidocQuotedEmphasized
-syn match asciidocEmphasized2Delimiter contained "[']" containedin=asciidocQuotedEmphasized2
-syn match asciidocUnconstrainedEmphasizedDelimiter contained "[_][_]" containedin=asciidocQuotedUnconstrainedEmphasized
-syn match asciidocBoldDelimiter contained "[*]" containedin=asciidocQuotedBold
-syn match asciidocUnconstrainedBoldDelimiter contained "[*][*]" containedin=asciidocQuotedUnconstrainedBold
+syn match asciidocMonospacedDelimiter contained "[+]" conceal containedin=asciidocQuotedMonospaced
+syn match asciidocMonospaced2Delimiter contained "[`]" conceal containedin=asciidocQuotedMonospaced2
+syn match asciidocUnconstrainedMonospacedDelimiter contained "[+][+]" conceal containedin=asciidocQuotedUnconstrainedMonospaced
+syn match asciidocEmphasizedDelimiter contained "[_]" conceal containedin=asciidocQuotedEmphasized
+syn match asciidocEmphasized2Delimiter contained "[']" conceal containedin=asciidocQuotedEmphasized2
+syn match asciidocUnconstrainedEmphasizedDelimiter contained "[_][_]" conceal containedin=asciidocQuotedUnconstrainedEmphasized
+syn match asciidocBoldDelimiter contained "[*]" conceal containedin=asciidocQuotedBold
+syn match asciidocUnconstrainedBoldDelimiter contained "[*][*]" conceal containedin=asciidocQuotedUnconstrainedBold
 
 syn match asciidocAdmonition /^\u\{3,15}:\(\s\+.*\)\@=/
 
