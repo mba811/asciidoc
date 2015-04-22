@@ -5,7 +5,7 @@ Optional Author Name <optional@author.email>
 :Some attribute: Some value
 :icons: font
 :toc:
-:toclevels: 1
+:toclevels: 3
 
 ----
 // This is a single-line comment, it won't be rendered.
