@@ -6,6 +6,13 @@ Optional Author Name <optional@author.email>
 :icons: font
 :toc:
 :toclevels: 3
+:specialwords.todoword: TODO FIXME BUG
+
+TODO
+
+FIXME this
+
+Here is BUG but I'm not so sure.
 
 ----
 // This is a single-line comment, it won't be rendered.
