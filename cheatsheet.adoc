@@ -38,7 +38,7 @@ Line with unknown attribute like {nosuchattribute}.
 
 ----
 ////
-You can use attributes to enable and configure auto-generated table of contents, for ex.:
+TIP: You can use attributes to enable and configure auto-generated table of contents, for ex.:
 :toc:
 :toclevels: 3
 
@@ -48,7 +48,7 @@ toc::[]
 ----
 
 ////
-You can use attributes to enable and configure auto-generated table of contents, for ex.:
+TIP: You can use attributes to enable and configure auto-generated table of contents, for ex.:
 :toc:
 :toclevels: 3
 
