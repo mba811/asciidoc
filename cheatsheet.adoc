@@ -3,8 +3,18 @@ Document Title
 Optional Author Name <optional@author.email>
 :Some attribute: Some value
 
-....
-....
+----
+// This is a single-line comment, it won't be rendered.
+
+////
+This is a multi-line block with comments.
+
+Comments will be used to note differences from default Asciidoc behaviour,
+some may be bugs, others may be specifics of GitHub or AsciiDoctor.
+
+Asciidoc syntax will be shown first, example of GitHub rendering next.
+////
+----
 
 Author is "{author}" with email <{email}> +
 Some attribute's value is {someattribute}
