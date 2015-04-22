@@ -68,7 +68,7 @@ Escaped: \{author} and +++{author}+++
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -119,7 +119,7 @@ multi-level one, because it include list bullets.
 == Headers
 
 ++++
-<table class=cheatsheet width=100%>
+<table class=cheatsheet>
 ++++
 
 
@@ -253,7 +253,7 @@ Second paragraph.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -280,7 +280,7 @@ Second paragraph.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -311,7 +311,7 @@ Not a code in next paragraph.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -337,7 +337,7 @@ NOTE: This is an example
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -364,7 +364,7 @@ single-paragraph note.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -385,7 +385,7 @@ TIP: Some tip text.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -406,7 +406,7 @@ IMPORTANT: Some important text.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -427,7 +427,7 @@ WARNING: Some warning text.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -491,7 +491,7 @@ Use: code or file listings
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -530,7 +530,7 @@ my $dbh = DBI->connect('...',$u,$p)
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -563,7 +563,7 @@ Use: sidebar notes :)
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -610,7 +610,7 @@ before example block.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -643,7 +643,7 @@ Use: multi-paragraph notes.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -672,7 +672,7 @@ Use: hide comments
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -707,7 +707,7 @@ Use: backend-specific markup like
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -735,7 +735,7 @@ Use: backend-specific markup like
 .Optional Title
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -759,7 +759,7 @@ incorrectly processed as list.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -829,7 +829,7 @@ line break
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -858,7 +858,7 @@ normal, ^super^, ~sub~.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -887,7 +887,7 @@ Command: `ls -al`
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -908,7 +908,7 @@ Path: '/some/filez.txt', '.b'
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -933,7 +933,7 @@ Path: '/some/filez.txt', '.b'
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -954,7 +954,7 @@ Chars: n__i__**b**++m++[red]##r##
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -975,7 +975,7 @@ Chars: n__i__**b**++m++[red]##r##
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -996,7 +996,7 @@ Chars: n__i__**b**++m++[red]##r##
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1017,7 +1017,7 @@ Chars: n__i__**b**++m++[red]##r##
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1109,7 +1109,7 @@ xref:anchor-2[Second anchor].
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1134,7 +1134,7 @@ link:/index.html[This site root]
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1159,7 +1159,7 @@ mailto:root@localhost[email admin]
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1206,7 +1206,7 @@ link="/images/font/640-screen2.gif"]
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1316,7 +1316,7 @@ there are no such files.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1341,7 +1341,7 @@ there are no such files.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1388,7 +1388,7 @@ there are no such files.
 ... lowerroman
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 .... upperalpha
@@ -1445,7 +1445,7 @@ c. letter
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1500,7 +1500,7 @@ Term 5:: Definition 5
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1529,7 +1529,7 @@ Term 1;;
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1590,7 +1590,7 @@ Term 5:: Definition 5
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1619,7 +1619,7 @@ Question 2:: Answer 2
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1666,7 +1666,7 @@ Question 2:: Answer 2
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1727,7 +1727,7 @@ Independent paragraph break list.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1786,7 +1786,7 @@ Last continuation.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1900,7 +1900,7 @@ You can fill table from CSV file using +include::+ macros inside table.
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1939,7 +1939,7 @@ A,B,C,D
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
@@ -1974,7 +1974,7 @@ ID,FName,LName,Address,Phone
 
 
 ++++
-</td></tr>
+</td></tr><tr><td></td><td></td></tr>
 ++++
 
 ++++
