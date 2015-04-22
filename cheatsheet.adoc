@@ -1,17 +1,35 @@
 Document Title
 ==============
-Implicit Author Name <implicit@author.email>
-:Date:      Jan 2000
-:Revision:  1.0 must be set explicitly
+Optional Author Name <optional@author.email>
+:Some attribute: Some value
 
-Author is {author} with email <{email}> +
-Version is {revision} at {date}
+....
+....
 
-Line
-with bad attribute {qwe} will NOT be
-deleted
+Author is "{author}" with email <{email}> +
+Some attribute's value is {someattribute}
 
-Escaped: \{qwe} and +++{qwe}+++
+Line with unknown attribute
+like {nosuchattribute} must, but won't be
+deleted.
+
+----
+// Comment
+
+== Level 1
+Text.
+
+=== Level 2
+Text.
+
+==== Level 3
+Text.
+
+===== Level 4
+Text.
+----
+
+// Comment
 
 == Level 1
 Text.
@@ -26,3 +44,24 @@ Text.
 Text.
 
 
+ ----
+ Normal *Bold* _Italic_
+ ----
+
+....
+Normal *Bold* _Italic_
+
+NOTE: Comment.
+
+[source,perl]
+----
+#!/usr/bin/perl
+use strict;
+
+1;
+----
+
+____
+Quote block
+____
+....
