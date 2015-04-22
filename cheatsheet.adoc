@@ -23,18 +23,38 @@ Optional Author Name <optional@author.email>
 ----
 
 ----
-Author is "{author}" with email <{email}> +
-Some attribute's value is {someattribute}
+Author is "{author}" with email <{email}>,
+some attribute's value is {someattribute}.
 
 // Line with unknown attribute must be removed, but it's not.
-Line with unknown attribute like {nosuchattribute} must be deleted.
+Line with unknown attribute like {nosuchattribute}.
 ----
 
-Author is "{author}" with email <{email}> +
-Some attribute's value is {someattribute}
+Author is "{author}" with email <{email}>,
+some attribute's value is {someattribute}.
 
 // Line with unknown attribute must be removed, but it's not.
-Line with unknown attribute like {nosuchattribute} must be deleted.
+Line with unknown attribute like {nosuchattribute}.
+
+----
+////
+You can use attributes to enable and configure auto-generated table of contents, for ex.:
+:toc:
+:toclevels: 3
+
+Then put this line where you want to insert table of contents:
+toc::[]
+////
+----
+
+////
+You can use attributes to enable and configure auto-generated table of contents, for ex.:
+:toc:
+:toclevels: 3
+
+Then put this line where you want to insert table of contents:
+toc::[]
+////
 
 ----
 == Level 1
