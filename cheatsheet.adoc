@@ -17,6 +17,9 @@ Asciidoc syntax will be shown first, then how it will look on GitHub.
 Only exception is document title (which must comes first in document), which is:
 ////
 
+// Both author name/email, and even :Revision: attribute should be rendered
+// under document title, but they're not.
+
 Document Title
 ==============
 Optional Author Name <optional@author.email>
