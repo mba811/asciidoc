@@ -3,8 +3,7 @@ Asciidoc cheatsheet for GitHub
 Optional Author Name <optional@author.email>
 :Revision: 1.0
 :Some attribute: Some value
-:icons:
-:icon:
+:icons: font
 :toc:
 :toclevels: 1
 
