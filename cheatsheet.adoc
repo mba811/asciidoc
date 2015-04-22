@@ -6,6 +6,7 @@ Optional Author Name <optional@author.email>
 :icons: font
 :toc:
 :toclevels: 3
+:todoword.: <span class=yellow-background>{words}</span>
 :specialwords.todoword: TODO FIXME BUG
 
 TODO
