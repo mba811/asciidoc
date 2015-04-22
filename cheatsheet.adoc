@@ -12,20 +12,31 @@ This is a multi-line block with comments.
 Comments will be used to note differences from default Asciidoc behaviour,
 some may be bugs, others may be specifics of GitHub or AsciiDoctor.
 
-Asciidoc syntax will be shown first, example of GitHub rendering next.
+Asciidoc syntax will be shown first, then how it will look on GitHub.
+Only exception is document title (which must comes first in document), which is:
 ////
+
+Document Title
+==============
+Optional Author Name <optional@author.email>
+:Some attribute: Some value
+----
+
+----
+Author is "{author}" with email <{email}> +
+Some attribute's value is {someattribute}
+
+// Line with unknown attribute must be removed, but it's not.
+Line with unknown attribute like {nosuchattribute} must be deleted.
 ----
 
 Author is "{author}" with email <{email}> +
 Some attribute's value is {someattribute}
 
-Line with unknown attribute
-like {nosuchattribute} must, but won't be
-deleted.
+// Line with unknown attribute must be removed, but it's not.
+Line with unknown attribute like {nosuchattribute} must be deleted.
 
 ----
-// Comment
-
 == Level 1
 Text.
 
@@ -39,8 +50,6 @@ Text.
 Text.
 ----
 
-// Comment
-
 == Level 1
 Text.
 
@@ -52,26 +61,3 @@ Text.
 
 ===== Level 4
 Text.
-
-
- ----
- Normal *Bold* _Italic_
- ----
-
-....
-Normal *Bold* _Italic_
-
-NOTE: Comment.
-
-[source,perl]
-----
-#!/usr/bin/perl
-use strict;
-
-1;
-----
-
-____
-Quote block
-____
-....
