@@ -734,14 +734,6 @@ Use: backend-specific markup like
 
 .Optional Title
 
-++++
-</td></tr><tr><td></td><td></td></tr>
-++++
-
-++++
-<tr><td class=cheatsheet-source>
-++++
-
 ....
 *Literal* Block
 
@@ -751,12 +743,6 @@ paragraph (indented) like
   2. Second.
 incorrectly processed as list.
 ....
-
-++++
-</td><td class=cheatsheet-render>
-++++
-
-
 
 ++++
 </td></tr><tr><td></td><td></td></tr>
@@ -1386,11 +1372,6 @@ there are no such files.
 .. loweralpha
 ... lowerroman
 ... lowerroman
-
-++++
-</td></tr><tr><td></td><td></td></tr>
-++++
-
 .... upperalpha
 .... upperalpha
 ..... upperroman
@@ -1400,6 +1381,10 @@ there are no such files.
 .. loweralpha
 . number
 
+
+++++
+</td></tr><tr><td></td><td></td></tr>
+++++
 
 ++++
 <tr><td class=cheatsheet-source>
