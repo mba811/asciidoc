@@ -1,12 +1,28 @@
 Document Title
 ==============
-Optional Author Name <optional@author.email>
+Implicit Author Name <implicit@author.email>
 :Date:      Jan 2000
-:Revision:  1.0
+:Revision:  1.0 must be set explicitly
 
-Author is {author} +
-Version is {revision}
+Author is {author} with email <{email}> +
+Version is {revision} at {date}
 
 Line
-with bad attribute {qwe} will be
+with bad attribute {qwe} will NOT be
 deleted
+
+Escaped: \{qwe} and +++{qwe}+++
+
+== Level 1
+Text.
+
+=== Level 2
+Text.
+
+==== Level 3
+Text.
+
+===== Level 4
+Text.
+
+
