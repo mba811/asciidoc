@@ -1,6 +1,7 @@
 Document Title
 ==============
 Optional Author Name <optional@author.email>
+:Revision: 1.0
 :Some attribute: Some value
 
 ----
@@ -19,6 +20,7 @@ Only exception is document title (which must comes first in document), which is:
 Document Title
 ==============
 Optional Author Name <optional@author.email>
+:Revision: 1.0
 :Some attribute: Some value
 ----
 
